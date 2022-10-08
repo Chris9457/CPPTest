@@ -6,3 +6,5 @@ file(GLOB SRC_FILES ${SRC_DIR}/*)
 add_executable(${APP_NAME} ${SRC_FILES})
 
 target_link_libraries(${APP_NAME} PRIVATE ReverseLib)
+
+install(TARGETS ${APP_NAME} DESTINATION .)
